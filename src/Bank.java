@@ -4,13 +4,15 @@ public class Bank {
         this.account = account;
     }
     public void increase(){
-        for(; account <= 20000;account+=2){
+        for(int i = 1; i <= 20000;i++){
+            account+=2;
             System.out.println("Inc: " + account);
         }
     }
 
     public void  decrease(){
-        for(; account > 1;account--){
+        for(int i = 1; i <= 20000;i++){
+            account--;
             System.out.println("Dec: " + account);
         }
     }
