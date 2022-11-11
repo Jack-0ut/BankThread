@@ -3,16 +3,12 @@ public class Bank {
     public Bank(int account){
         this.account = account;
     }
-    public void increase(){
-        for(; account <= 20000;account+=2){
-            System.out.println("Inc: " + account);
-        }
+
+    public int getAccount() {
+        return account;
     }
 
-    public void  decrease(){
-        for(; account > 1;account--){
-            System.out.println("Dec: " + account);
-        }
+    public void setAccount(int account) {
+        this.account = account;
     }
-
 }
