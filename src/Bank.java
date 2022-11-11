@@ -3,13 +3,13 @@ public class Bank {
     public Bank(int account){
         this.account = account;
     }
-    public void increase(){
+    public synchronized void increase(){
         for(; account <= 20000;account+=2){
             System.out.println("Inc: " + account);
         }
     }
 
-    public void  decrease(){
+    public synchronized void  decrease(){
         for(; account > 1;account--){
             System.out.println("Dec: " + account);
         }
