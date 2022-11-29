@@ -9,5 +9,12 @@ public class Main {
 
         thread1Object.start();
         thread2Object.start();
+
+        try {
+            thread1Object.join();
+            thread2Object.join();
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
     }
 }

@@ -6,6 +6,9 @@ public class Thread1 implements Runnable{
     }
     @Override
     public void run() {
-        bank.increase();
+        for (int i = 1; i <= 20000; i++) {
+            bank.setAccount(bank.getAccount() + 2);
+        }
+        System.out.println("Inc: " + bank.getAccount());
     }
 }
